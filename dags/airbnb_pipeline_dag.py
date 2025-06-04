@@ -11,17 +11,17 @@ from airflow.models.dag import DAG
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError, ClientError
-# from airflow.utils.dates import days_ago # Not strictly needed if using pendulum.datetime
 
-# --- Configuration ---
-NYC_LISTINGS_URL_CONFIG = "http://data.insideairbnb.com/united-states/ny/new-york-city/2025-05-01/data/listings.csv.gz" # Renamed to avoid confusion with function param
 
-# Data paths (inside Airflow container)
+
+NYC_LISTINGS_URL_CONFIG = "http://data.insideairbnb.com/united-states/ny/new-york-city/2025-05-01/data/listings.csv.gz" 
+
+
 RAW_DATA_DIR = "/opt/airflow/data_staging"
 RAW_GZ_FILENAME = "listings.csv.gz"
 RAW_CSV_FILENAME = "listings.csv"
-RAW_GZ_FILE_PATH_CONFIG = os.path.join(RAW_DATA_DIR, RAW_GZ_FILENAME) # Renamed
-RAW_CSV_FILE_PATH_CONFIG = os.path.join(RAW_DATA_DIR, RAW_CSV_FILENAME) # Renamed
+RAW_GZ_FILE_PATH_CONFIG = os.path.join(RAW_DATA_DIR, RAW_GZ_FILENAME) 
+RAW_CSV_FILE_PATH_CONFIG = os.path.join(RAW_DATA_DIR, RAW_CSV_FILENAME)
 
 PROCESSED_PARQUET_FILENAME="listings_processed.parquet"
 PROCESSED_PARQUET_PATH=os.path.join(RAW_DATA_DIR, PROCESSED_PARQUET_FILENAME)
@@ -30,32 +30,30 @@ PROCESSED_PARQUET_PATH=os.path.join(RAW_DATA_DIR, PROCESSED_PARQUET_FILENAME)
 S3_BUCKET_NAME_CONFIG="rmkumar-airbnb-processed-data"
 S3_PROCESSED_KEY_PREFIX="processed/airbnb_nyc_listings/"
 
-# --- Python Callable Functions ---
 
 def download_airbnb_data_callable(download_url:str, output_gz_file_path:str, output_csv_path: str, **kwargs):
-    """Downloads Airbnb listings data, saves it, and decompresses it."""
     ti = kwargs['ti']
-    # Use the passed download_url parameter, not the global one
+    
     logging.info(f"Starting download from {download_url}")
 
     output_dir=os.path.dirname(output_gz_file_path)
     os.makedirs(output_dir, exist_ok=True)
 
     try:
-        # Use the passed download_url parameter
+        
         response = requests.get(download_url, stream=True, timeout=300)
         response.raise_for_status()
 
-        # Use output_gz_file_path (consistent with function signature and op_kwargs)
+        
         with open(output_gz_file_path, 'wb') as f:
             shutil.copyfileobj(response.raw, f)
         logging.info(f"Successfully downloaded and saved to {output_gz_file_path}")
         ti.xcom_push(key="downloaded_gz_file_path", value=output_gz_file_path)
 
-        # Decompress the .gz file
+        
         logging.info(f"Decompressing {output_gz_file_path} to {output_csv_path}")
-        with gzip.open(output_gz_file_path, 'rb') as f_in: # Use output_gz_file_path
-            with open(output_csv_path, 'wb') as f_out: # Use output_csv_path
+        with gzip.open(output_gz_file_path, 'rb') as f_in: 
+            with open(output_csv_path, 'wb') as f_out: 
                 shutil.copyfileobj(f_in, f_out)
         logging.info(f"Successfully decompressed to {output_csv_path}")
         ti.xcom_push(key="downloaded_csv_file_path", value=output_csv_path)
@@ -109,7 +107,7 @@ def transform_airbnb_data(ti):
         columns_to_keep = [
             'id', 'name', 'host_id', 'host_since', 'neighbourhood_cleansed',
             'latitude', 'longitude', 'property_type', 'room_type',
-            'accommodates', 'bathrooms_text', 'bedrooms', 'beds', # 'price' (original string) can be kept or dropped
+            'accommodates', 'bathrooms_text', 'bedrooms', 'beds', 
             'minimum_nights', 'maximum_nights', 'number_of_reviews', 'first_review',
             'last_review', 'review_scores_rating', 'instant_bookable'
         ]
@@ -120,7 +118,7 @@ def transform_airbnb_data(ti):
         existing_columns_to_keep=[col for col in columns_to_keep if col in df.columns]
         if not existing_columns_to_keep:
             logging.warning("No columns selected to keep after filtering. Output Parquet might be empty or cause errors.")
-            # Consider raising an error if this is an invalid state
+            
 
         df_transformed=df[existing_columns_to_keep].copy()
 
@@ -132,7 +130,7 @@ def transform_airbnb_data(ti):
         for col in df_transformed.select_dtypes(include=['datetime64[ns]']).columns:
             df_transformed[col]=df_transformed[col].fillna(pd.NaT)
 
-        # Correct os.makedirs syntax: exist_ok is a parameter of makedirs
+        
         os.makedirs(os.path.dirname(processed_parquet_file_path), exist_ok=True)
 
         df_transformed.to_parquet(processed_parquet_file_path, index=False)
@@ -189,14 +187,14 @@ def upload_to_s3_bucket(ti, bucket_name:str, s3_key_prefix:str, **kwargs):
     
 
 
-# --- DAG Definition ---
+
 
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 1, # Retries set to 1, task already retried once in logs
+    'retries': 1, 
     'retry_delay': pendulum.duration(minutes=2),
 }
 
@@ -205,7 +203,7 @@ with DAG(
     default_args=default_args,
     description='ETL pipeline for NYC Airbnb listings: Download, Decompress, Transform & Load to S3',
     schedule='@once',
-    start_date=pendulum.datetime(2024, 1, 1, tz="UTC"), # Ensure start_date is in the past
+    start_date=pendulum.datetime(2024, 1, 1, tz="UTC"), 
     catchup=False,
     tags=['airbnb', 'etl', 'nyc', 'portfolio', 'extract', 's3'],
 ) as dag:
@@ -218,14 +216,14 @@ with DAG(
         task_id='download_airbnb_raw_data',
         python_callable=download_airbnb_data_callable,
         op_kwargs={
-            'download_url': NYC_LISTINGS_URL_CONFIG, # Using renamed config variable
-            'output_gz_file_path': RAW_GZ_FILE_PATH_CONFIG, # Using renamed config variable
-            'output_csv_path': RAW_CSV_FILE_PATH_CONFIG # Using renamed config variable
+            'download_url': NYC_LISTINGS_URL_CONFIG, 
+            'output_gz_file_path': RAW_GZ_FILE_PATH_CONFIG, 
+            'output_csv_path': RAW_CSV_FILE_PATH_CONFIG 
         }
     )
 
     task_transform_airbnb_data=PythonOperator(
-        task_id='transform_airbnb_listing_data', # Corrected typo: 'listsing' to 'listing'
+        task_id='transform_airbnb_listing_data', 
         python_callable=transform_airbnb_data,
     )
 
