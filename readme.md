@@ -44,6 +44,7 @@ The pipeline, orchestrated by Airflow, executes the following tasks sequentially
 ### Airflow DAG Visualization
 
 ![Airflow DAG Graph](Dag_screenshot.png)
+![Linear Diagram](Diagram.png)
 
 
 ## 🛠️ Tech Stack
