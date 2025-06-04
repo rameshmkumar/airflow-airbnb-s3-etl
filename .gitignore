@@ -1,0 +1,37 @@
+project_note.md
+docker-compose.yaml
+/config
+/logs
+.env
+/plugins
+/data_staging
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.env
+*.env
+
+# Airflow logs and configs
+logs/
+config/
+data_staging/
+plugins/__pycache__/
+
+# Docker
+docker-compose.yaml
+*.pid
+
+# Database and data files
+*.db
+*.sqlite3
+*.csv
+*.tsv
+*.parquet
+
+# AWS credentials (if present)
+.aws/
