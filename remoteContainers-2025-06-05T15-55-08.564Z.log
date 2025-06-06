@@ -1,0 +1,1296 @@
+[2025-06-05T15:55:08.575Z] Dev Containers 0.413.0 in VS Code 1.100.3 (258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3).
+[2025-06-05T15:55:08.575Z] Start: Resolving Remote
+[2025-06-05T15:55:08.579Z] Setting up container for folder or workspace: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+[2025-06-05T15:55:08.579Z] Context: desktop-linux
+[2025-06-05T15:55:08.580Z] Start: Check Docker is running
+[2025-06-05T15:55:08.580Z] Start: Run: docker version
+[2025-06-05T15:55:08.596Z] Client:
+[2025-06-05T15:55:08.596Z]  Version:           27.5.1
+ API version:       1.47
+ Go version:        go1.22.11
+ Git commit:        9f9e405
+ Built:             Wed Jan 22 13:37:19 2025
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.38.0 (181591)
+ Engine:
+  Version:          27.5.1
+  API version:      1.47 (minimum version 1.24)
+  Go version:       go1.22.11
+  Git commit:       4c9b3b0
+  Built:            Wed Jan 22 13:41:25 2025
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          1.7.25
+  GitCommit:        bcc810d6b9066471b0b6fa75f557a15a1cbf31bb
+ runc:
+  Version:          1.1.12
+  GitCommit:        v1.1.12-0-g51d5e946
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[2025-06-05T15:55:08.700Z] Stop (120 ms): Run: docker version
+[2025-06-05T15:55:08.700Z] Stop (120 ms): Check Docker is running
+[2025-06-05T15:55:08.700Z] Start: Run: docker volume ls -q
+[2025-06-05T15:55:08.818Z] Stop (118 ms): Run: docker volume ls -q
+[2025-06-05T15:55:08.819Z] Start: Run: docker ps -q -a --filter label=vsch.local.folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --filter label=vsch.quality=stable
+[2025-06-05T15:55:08.935Z] Stop (116 ms): Run: docker ps -q -a --filter label=vsch.local.folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --filter label=vsch.quality=stable
+[2025-06-05T15:55:08.935Z] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --filter label=devcontainer.config_file=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json
+[2025-06-05T15:55:09.055Z] Stop (120 ms): Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --filter label=devcontainer.config_file=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json
+[2025-06-05T15:55:09.055Z] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+[2025-06-05T15:55:09.181Z] Stop (126 ms): Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+[2025-06-05T15:55:09.181Z] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+[2025-06-05T15:55:09.315Z] Stop (134 ms): Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+[2025-06-05T15:55:09.316Z] Running Dev Containers CLI:   up --user-data-folder /Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-97da737b-a065-46f3-8c12-245e86a917491749138908228 --workspace-folder /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --id-label devcontainer.config_file=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --log-level debug --log-format json --config /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[2025-06-05T15:55:09.345Z] ProxyResolver#loadSystemCertificates count
+[2025-06-05T15:55:09.346Z] ProxyResolver#loadSystemCertificates count filtered
+[2025-06-05T15:55:09.346Z] Start: Run: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) /Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-97da737b-a065-46f3-8c12-245e86a917491749138908228 --workspace-folder /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --id-label devcontainer.config_file=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --log-level debug --log-format json --config /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[2025-06-05T15:55:09.445Z] @devcontainers/cli 0.76.0. Node.js v20.19.0. darwin 24.3.0 arm64.
+[2025-06-05T15:55:09.445Z] Start: Run: docker buildx version
+[2025-06-05T15:55:09.587Z] Stop (142 ms): Run: docker buildx version
+[2025-06-05T15:55:09.587Z] github.com/docker/buildx v0.20.1-desktop.2 aaf7c2bc7f9ec3afee1cec77d671845a4b57a0c8
+[2025-06-05T15:55:09.587Z] 
+[2025-06-05T15:55:09.587Z] Start: Run: docker -v
+[2025-06-05T15:55:09.648Z] Stop (61 ms): Run: docker -v
+[2025-06-05T15:55:09.648Z] Start: Resolving Remote
+[2025-06-05T15:55:09.652Z] Start: Run: docker compose version --short
+[2025-06-05T15:55:09.742Z] Stop (90 ms): Run: docker compose version --short
+[2025-06-05T15:55:09.742Z] Docker Compose version: 2.32.4-desktop.1
+[2025-06-05T15:55:09.743Z] Start: Run: docker compose -f /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/docker-compose.yaml --profile * config
+[2025-06-05T15:55:10.011Z] Stop (268 ms): Run: docker compose -f /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/docker-compose.yaml --profile * config
+[2025-06-05T15:55:10.012Z] name: airbnb_pipeline
+services:
+  airflow-cli:
+    profiles:
+      - debug
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - bash
+      - -c
+      - airflow
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+      CONNECTION_CHECK_MAX_COUNT: "0"
+    networks:
+      default: null
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-init:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - -c
+      - |
+        if [[ -z "501" ]]; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: AIRFLOW_UID not set!\e[0m"
+          echo "If you are on Linux, you SHOULD follow the instructions below to set "
+          echo "AIRFLOW_UID environment variable, otherwise files will be owned by root."
+          echo "For other operating systems you can get rid of the warning with manually created .env file:"
+          echo "    See: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#setting-the-right-airflow-user"
+          echo
+        fi
+        one_meg=1048576
+        mem_available=$$(($$(getconf _PHYS_PAGES) * $$(getconf PAGE_SIZE) / one_meg))
+        cpus_available=$$(grep -cE 'cpu[0-9]+' /proc/stat)
+        disk_available=$$(df / | tail -1 | awk '{print $$4}')
+        warning_resources="false"
+        if (( mem_available < 4000 )) ; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough memory available for Docker.\e[0m"
+          echo "At least 4GB of memory required. You have $$(numfmt --to iec $$((mem_available * one_meg)))"
+          echo
+          warning_resources="true"
+        fi
+        if (( cpus_available < 2 )); then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough CPUS available for Docker.\e[0m"
+          echo "At least 2 CPUs recommended. You have $${cpus_available}"
+          echo
+          warning_resources="true"
+        fi
+        if (( disk_available < one_meg * 10 )); then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough Disk space available for Docker.\e[0m"
+          echo "At least 10 GBs recommended. You have $$(numfmt --to iec $$((disk_available * 1024 )))"
+          echo
+          warning_resources="true"
+        fi
+        if [[ $${warning_resources} == "true" ]]; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: You have not enough resources to run Airflow (see above)!\e[0m"
+          echo "Please follow the instructions to increase amount of resources available:"
+          echo "   https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#before-you-begin"
+          echo
+        fi
+        mkdir -p /sources/logs /sources/dags /sources/plugins
+        chown -R "501:0" /sources/{logs,dags,plugins}
+        exec /entrypoint airflow version
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    entrypoint:
+      - /bin/bash
+    environment:
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_PASSWORD: airflow
+      _AIRFLOW_WWW_USER_USERNAME: airflow
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    networks:
+      default: null
+    user: "0:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+        target: /sources
+        bind:
+          create_host_path: true
+  airflow-scheduler:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - --fail
+        - http://localhost:8974/health
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-triggerer:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - triggerer
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-webserver:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - webserver
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - --fail
+        - http://localhost:8080/health
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-worker:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - celery
+      - worker
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+      DUMB_INIT_SETSID: "0"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}" || celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  flower:
+    profiles:
+      - flower
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - celery
+      - flower
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - --fail
+        - http://localhost:5555/
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5555
+        published: "5555"
+        protocol: tcp
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  postgres:
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_USER: airflow
+    healthcheck:
+      test:
+        - CMD
+        - pg_isready
+        - -U
+        - airflow
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    image: postgres:13
+    networks:
+      default: null
+    restart: always
+    volumes:
+      - type: volume
+        source: postgres-db-volume
+        target: /var/lib/postgresql/data
+        volume: {}
+  redis:
+    expose:
+      - "6379"
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      timeout: 30s
+      interval: 10s
+      retries: 50
+      start_period: 30s
+    image: redis:latest
+    networks:
+      default: null
+    restart: always
+networks:
+  default:
+    name: airbnb_pipeline_default
+volumes:
+  postgres-db-volume:
+    name: airbnb_pipeline_postgres-db-volume
+x-airflow-common:
+  build: .
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+  environment:
+    _PIP_ADDITIONAL_REQUIREMENTS: ""
+    AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__CORE__FERNET_KEY: ""
+    AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+  user: "501:0"
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./config:/opt/airflow/config
+    - ./plugins:/opt/airflow/plugins
+    - ./data_staging:/opt/airflow/data_staging
+    - ~/.aws:/home/airflow/.aws:ro
+[2025-06-05T15:55:10.021Z] Start: Run: docker ps -q -a --filter label=com.docker.compose.project=airbnb_pipeline --filter label=com.docker.compose.service=airflow-webserver
+[2025-06-05T15:55:10.150Z] Stop (129 ms): Run: docker ps -q -a --filter label=com.docker.compose.project=airbnb_pipeline --filter label=com.docker.compose.service=airflow-webserver
+[2025-06-05T15:55:10.151Z] Start: Run: docker events --format {{json .}} --filter event=start
+[2025-06-05T15:55:10.153Z] PersistedPath=/Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data, ContainerHasLabels=false
+[2025-06-05T15:55:10.154Z] Start: Run: docker compose -f /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/docker-compose.yaml --profile * config
+[2025-06-05T15:55:10.434Z] Stop (280 ms): Run: docker compose -f /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/docker-compose.yaml --profile * config
+[2025-06-05T15:55:10.434Z] name: airbnb_pipeline
+services:
+  airflow-cli:
+    profiles:
+      - debug
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - bash
+      - -c
+      - airflow
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+      CONNECTION_CHECK_MAX_COUNT: "0"
+    networks:
+      default: null
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-init:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - -c
+      - |
+        if [[ -z "501" ]]; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: AIRFLOW_UID not set!\e[0m"
+          echo "If you are on Linux, you SHOULD follow the instructions below to set "
+          echo "AIRFLOW_UID environment variable, otherwise files will be owned by root."
+          echo "For other operating systems you can get rid of the warning with manually created .env file:"
+          echo "    See: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#setting-the-right-airflow-user"
+          echo
+        fi
+        one_meg=1048576
+        mem_available=$$(($$(getconf _PHYS_PAGES) * $$(getconf PAGE_SIZE) / one_meg))
+        cpus_available=$$(grep -cE 'cpu[0-9]+' /proc/stat)
+        disk_available=$$(df / | tail -1 | awk '{print $$4}')
+        warning_resources="false"
+        if (( mem_available < 4000 )) ; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough memory available for Docker.\e[0m"
+          echo "At least 4GB of memory required. You have $$(numfmt --to iec $$((mem_available * one_meg)))"
+          echo
+          warning_resources="true"
+        fi
+        if (( cpus_available < 2 )); then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough CPUS available for Docker.\e[0m"
+          echo "At least 2 CPUs recommended. You have $${cpus_available}"
+          echo
+          warning_resources="true"
+        fi
+        if (( disk_available < one_meg * 10 )); then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough Disk space available for Docker.\e[0m"
+          echo "At least 10 GBs recommended. You have $$(numfmt --to iec $$((disk_available * 1024 )))"
+          echo
+          warning_resources="true"
+        fi
+        if [[ $${warning_resources} == "true" ]]; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: You have not enough resources to run Airflow (see above)!\e[0m"
+          echo "Please follow the instructions to increase amount of resources available:"
+          echo "   https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#before-you-begin"
+          echo
+        fi
+        mkdir -p /sources/logs /sources/dags /sources/plugins
+        chown -R "501:0" /sources/{logs,dags,plugins}
+        exec /entrypoint airflow version
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    entrypoint:
+      - /bin/bash
+    environment:
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_PASSWORD: airflow
+      _AIRFLOW_WWW_USER_USERNAME: airflow
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    networks:
+      default: null
+    user: "0:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+        target: /sources
+        bind:
+          create_host_path: true
+  airflow-scheduler:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - --fail
+        - http://localhost:8974/health
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-triggerer:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - triggerer
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-webserver:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - webserver
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - --fail
+        - http://localhost:8080/health
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  airflow-worker:
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - celery
+      - worker
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+      DUMB_INIT_SETSID: "0"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}" || celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  flower:
+    profiles:
+      - flower
+    build:
+      context: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline
+      dockerfile: Dockerfile
+    command:
+      - celery
+      - flower
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+        required: true
+      postgres:
+        condition: service_healthy
+        required: true
+      redis:
+        condition: service_healthy
+        required: true
+    environment:
+      _PIP_ADDITIONAL_REQUIREMENTS: ""
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - --fail
+        - http://localhost:5555/
+      timeout: 10s
+      interval: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5555
+        published: "5555"
+        protocol: tcp
+    restart: always
+    user: "501:0"
+    volumes:
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/dags
+        target: /opt/airflow/dags
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/logs
+        target: /opt/airflow/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/config
+        target: /opt/airflow/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/plugins
+        target: /opt/airflow/plugins
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/data_staging
+        target: /opt/airflow/data_staging
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/rameshkumar/.aws
+        target: /home/airflow/.aws
+        read_only: true
+        bind:
+          create_host_path: true
+  postgres:
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_USER: airflow
+    healthcheck:
+      test:
+        - CMD
+        - pg_isready
+        - -U
+        - airflow
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    image: postgres:13
+    networks:
+      default: null
+    restart: always
+    volumes:
+      - type: volume
+        source: postgres-db-volume
+        target: /var/lib/postgresql/data
+        volume: {}
+  redis:
+    expose:
+      - "6379"
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      timeout: 30s
+      interval: 10s
+      retries: 50
+      start_period: 30s
+    image: redis:latest
+    networks:
+      default: null
+    restart: always
+networks:
+  default:
+    name: airbnb_pipeline_default
+volumes:
+  postgres-db-volume:
+    name: airbnb_pipeline_postgres-db-volume
+x-airflow-common:
+  build: .
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+  environment:
+    _PIP_ADDITIONAL_REQUIREMENTS: ""
+    AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__CORE__FERNET_KEY: ""
+    AIRFLOW__CORE__LOAD_EXAMPLES: "true"
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+  user: "501:0"
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./config:/opt/airflow/config
+    - ./plugins:/opt/airflow/plugins
+    - ./data_staging:/opt/airflow/data_staging
+    - ~/.aws:/home/airflow/.aws:ro
+[2025-06-05T15:55:10.435Z] Start: Run: docker inspect --type image apache/airflow:2.8.1
+[2025-06-05T15:55:10.567Z] Stop (132 ms): Run: docker inspect --type image apache/airflow:2.8.1
+[2025-06-05T15:55:10.569Z] Docker Compose override file for building image:
+services:
+  airflow-webserver:
+    build:
+      dockerfile: /var/folders/j7/qkgw84q14fq2dwz0x8kbw2wm0000gn/T/devcontainercli/container-features/0.76.0-1749138910567/Dockerfile-with-features
+      args:
+        - BUILDKIT_INLINE_CACHE=1
+        - _DEV_CONTAINERS_BASE_IMAGE=dev_container_auto_added_stage_label
+
+[2025-06-05T15:55:10.569Z] Start: Run: docker compose --project-name airbnb_pipeline -f /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/docker-compose.yaml -f /Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data/docker-compose/docker-compose.devcontainer.build-1749138910569.yml build
+[2025-06-05T15:55:10.735Z] [+] Building 0.0s (0/1)                                    docker:desktop-linux
+[2025-06-05T15:55:10.735Z] 
+[2025-06-05T15:55:10.749Z] [+] Building 0.0s (1/1) FINISHED                           docker:desktop-linux
+ => [airflow-init internal] load build definition from Dockerfile          0.0s
+ => => transferring dockerfile: 1.21kB                                     0.0s
+[2025-06-05T15:55:10.902Z] failed to solve: dockerfile parse error on line 5: FROM requires either one or three arguments
+[2025-06-05T15:55:10.960Z] Stop (391 ms): Run: docker compose --project-name airbnb_pipeline -f /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/docker-compose.yaml -f /Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data/docker-compose/docker-compose.devcontainer.build-1749138910569.yml build
+[2025-06-05T15:55:10.964Z] Error: Command failed: docker compose --project-name airbnb_pipeline -f /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/docker-compose.yaml -f /Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data/docker-compose/docker-compose.devcontainer.build-1749138910569.yml build
+[2025-06-05T15:55:10.964Z]     at cw (/Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:432:525)
+[2025-06-05T15:55:10.964Z]     at async c6 (/Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:432:2475)
+[2025-06-05T15:55:10.964Z]     at async u6 (/Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:412:3489)
+[2025-06-05T15:55:10.964Z]     at async Y6 (/Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:484:4015)
+[2025-06-05T15:55:10.964Z]     at async BC (/Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:484:4957)
+[2025-06-05T15:55:10.965Z]     at async p7 (/Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:665:202)
+[2025-06-05T15:55:10.965Z]     at async d7 (/Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:664:14804)
+[2025-06-05T15:55:10.965Z]     at async /Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js:484:1188
+[2025-06-05T15:55:10.974Z] Stop (1628 ms): Run: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) /Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-97da737b-a065-46f3-8c12-245e86a917491749138908228 --workspace-folder /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --id-label devcontainer.config_file=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --log-level debug --log-format json --config /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[2025-06-05T15:55:10.975Z] Exit code 1
+[2025-06-05T15:55:10.980Z] Command failed: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) /Users/rameshkumar/.vscode/extensions/ms-vscode-remote.remote-containers-0.413.0/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /Users/rameshkumar/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-97da737b-a065-46f3-8c12-245e86a917491749138908228 --workspace-folder /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline --id-label devcontainer.config_file=/Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --log-level debug --log-format json --config /Users/rameshkumar/Documents/Projects/Portfolio_Projects/airbnb_pipeline/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[2025-06-05T15:55:10.980Z] Exit code 1

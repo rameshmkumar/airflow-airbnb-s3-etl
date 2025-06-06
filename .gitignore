@@ -1,5 +1,5 @@
 project_note.md
-docker-compose.yaml
+
 /config
 /logs
 .env
@@ -23,7 +23,7 @@ data_staging/
 plugins/__pycache__/
 
 # Docker
-docker-compose.yaml
+
 *.pid
 
 # Database and data files
@@ -33,5 +33,5 @@ docker-compose.yaml
 *.tsv
 *.parquet
 
-# AWS credentials (if present)
+
 .aws/

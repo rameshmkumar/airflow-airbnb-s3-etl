@@ -1,0 +1,48 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Airflow DAG Development Environment",
+
+    // 1. Tell VS Code to use your existing docker-compose.yaml
+    "dockerComposeFile": [
+        "../docker-compose.yaml" // Path relative to this .devcontainer folder
+    ],
+
+    // 2. Specify WHICH service from docker-compose.yaml VS Code should connect to.
+    //    The 'airflow-webserver' or 'airflow-scheduler' are good choices as they
+    //    will be built using your custom Dockerfile (once you set that up).
+    "service": "airflow-webserver", // Or "airflow-scheduler" or "airflow-worker"
+
+    // 3. Specify the folder in the container that maps to your local project root.
+    //    This should match a volume mount for the 'service' you chose above.
+    //    For official Airflow images, /opt/airflow is common for dags, logs, etc.
+    "workspaceFolder": "/opt/airflow",
+
+    // 4. Specify the user VS Code should run as inside the container.
+    //    This should match the user your Airflow service runs as (usually 'airflow').
+    "remoteUser": "airflow",
+
+    // 5. (Optional but Recommended) VS Code Customizations for the Dev Container
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",         // Python support
+                "ms-python.vscode-pylance", // IntelliSense for Python
+                "ms-azuretools.vscode-docker" // Docker integration in VS Code
+            ],
+            "settings": {
+                // Point to the Python interpreter inside the container
+                // This path might need adjustment based on the base Airflow image
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    },
+
+    // 6. (Optional) Forward ports from the container to your host machine.
+    //    This makes the Airflow UI (port 8080) accessible from your host browser.
+    "forwardPorts": [8080],
+
+    // 7. (Optional) Commands to run after the container is created.
+    //    Useful if you have dev-specific dependencies not in your main Dockerfile.
+    // "postCreateCommand": "pip install black pylint"
+}

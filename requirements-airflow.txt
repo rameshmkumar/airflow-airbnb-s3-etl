@@ -1,0 +1,9 @@
+# requirements-airflow.txt
+pandas
+requests
+boto3
+pyarrow
+# pendulum is often included or a core airflow dep, but doesn't hurt to list
+pendulum
+# psycopg2-binary is usually for Airflow's own backend DB, handled by compose.
+# apache-airflow-providers-amazon can be added if you start using specific AWS operators.
